@@ -1,0 +1,17 @@
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Tests.deps.json
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Tests.runtimeconfig.json
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Tests.runtimeconfig.dev.json
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Tests.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Tests.pdb
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Core.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\bin\Debug\netcoreapp2.2\ExampleWebshop.Core.pdb
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.csprojAssemblyReference.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.AssemblyInfoInputs.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.AssemblyInfo.cs
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.csproj.CopyComplete
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\ExampleWebshop.Tests\obj\Debug\netcoreapp2.2\ExampleWebshop.Tests.pdb

@@ -1,0 +1,129 @@
+﻿@page
+@model ExampleWebshop.UI.Web.Pages.CartModel
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<style>
+    .table td {
+        vertical-align: middle;
+    }
+
+        .table td img {
+            border-radius: 4px;
+        }
+
+        .table td:first-child {
+            width: 64px;
+        }
+
+        .table td:last-child {
+            width: 24px;
+        }
+</style>
+
+<h1 class="float-left">Cart</h1>
+
+<form method="post" asp-page-handler="clear">
+    <input type="submit" class="btn btn-outline-danger float-right" value="Clear cart" />
+</form>
+
+<div class="clearfix"></div>
+<hr />
+
+@if (Model.Cart.Items().Count() > 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Cart.Items())
+            {
+                <tr>
+                    <td>
+                        <img src="https://picsum.photos/64?__@item.Key.Name" alt="@item.Key.Name.">
+                    </td>
+                    <td>
+                        <p>
+                            @item.Key.Name
+                        </p>
+                    </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>
+                                    @item.Value
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <form asp-page-handler="quantity" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="ItemId" value="@item.Key.Id" />
+                                    <input type="hidden" name="Quantity" value="-1" />
+                                    <input type="submit" class="btn btn-outline-danger" value="-" />
+                                </form>
+                            </div>
+                            <div class="col-3">
+                                <form asp-page-handler="quantity" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="ItemId" value="@item.Key.Id" />
+                                    <input type="hidden" name="Quantity" value="1" />
+                                    <input type="submit" class="btn btn-outline-success" value="+" />
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <p>
+                            $@item.Key.Price
+                        </p>
+                    </td>
+                    <td class="text-right">
+                        <p>
+                            $@(item.Key.Price * item.Value)
+                        </p>
+                    </td>
+                    <td>
+                        <form asp-page-handler="delete" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="ItemId" value="@item.Key.Id" />
+                            <input type="hidden" name="Quantity" value="@item.Value" />
+                            <input type="submit" class="btn btn-outline-danger" value="X" />
+                        </form>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-right">Total: <strong>$@Model.Cart.CalculateTotal()</strong></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <a href="/Checkout" class="btn btn-primary">Checkout</a>
+}
+else
+{
+    <div class="text-center">
+        <img style="width: 512px; opacity: .33" src="https://cdn.dribbble.com/users/1244867/screenshots/4346888/empty_cart.jpg" />
+        <p class="lead">You have no items in your cart.</p>
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Browse the catalog</a>
+        </p>
+    </div>
+}
+

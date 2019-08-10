@@ -1,0 +1,116 @@
+﻿@page
+@model ExampleWebshop.UI.Web.Pages.CheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+
+<p>Please validate your order and address details below.</p>
+
+<h2>Address details</h2>
+<table class="table table-bordered">
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong>Full name</strong>
+            </td>
+            <td>
+                @Model.Person.FirstName @Model.Person.LastName
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Address</b>
+            </td>
+            <td>
+                <p>@Model.Person.AddressLine1</p>
+                <p>@Model.Person.AddressLine2</p>
+                <p>@Model.Person.AddressLine3</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<h2>Order details</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Cart.Items())
+        {
+            <tr>
+                <td>
+                    <img src="https://picsum.photos/64?__@item.Key.Name" alt="@item.Key.Name.">
+                </td>
+                <td>
+                    <p>
+                        @item.Key.Name
+                    </p>
+                </td>
+                <td>
+                    <div class="row">
+                        <p>
+                            @item.Value
+                        </p>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <p>
+                        $@item.Key.Price
+                    </p>
+                </td>
+                <td class="text-right">
+                    <p>
+                        $@(item.Key.Price * item.Value)
+                    </p>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5" class="text-right">
+                <h4>Total: <strong>$@Model.Cart.CalculateTotal()</strong></h4>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<hr/>
+
+<h2>Payment</h2>
+
+<div class="d-block my-3">
+    <div class="custom-control custom-radio">
+        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+        <label class="custom-control-label" for="credit">Credit card</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+        <label class="custom-control-label" for="debit">Debit card</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+        <label class="custom-control-label" for="paypal">Paypal</label>
+    </div>
+</div>
+
+<hr/>
+
+
+<form method="post">
+    <input type="submit" class="btn btn-primary" value="Confirm order" />
+</form>
+

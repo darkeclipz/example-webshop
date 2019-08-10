@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\ExampleWebshop.Tests\\ExampleWebshop.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\ExampleWebshop.Tests\\ExampleWebshop.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\ExampleWebshop.Tests\\ExampleWebshop.Tests.csproj",
+        "projectName": "ExampleWebshop.Tests",
+        "projectPath": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\ExampleWebshop.Tests\\ExampleWebshop.Tests.csproj",
+        "packagesPath": "C:\\Users\\Isomorphism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\ExampleWebshop.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Isomorphism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\ExampleWebshop.Core.csproj": {
+                "projectPath": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\ExampleWebshop.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\ExampleWebshop.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\ExampleWebshop.Core.csproj",
+        "projectName": "ExampleWebshop.Core",
+        "projectPath": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\ExampleWebshop.Core.csproj",
+        "packagesPath": "C:\\Users\\Isomorphism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Isomorphism\\source\\repos\\ExampleWebshop\\src\\ExampleWebshop.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Isomorphism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

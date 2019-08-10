@@ -1,0 +1,9 @@
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.csprojAssemblyReference.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.csproj.CoreCompileInputs.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.AssemblyInfoInputs.cache
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.AssemblyInfo.cs
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\bin\Debug\netstandard2.0\ExampleWebshop.Core.deps.json
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\bin\Debug\netstandard2.0\ExampleWebshop.Core.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\bin\Debug\netstandard2.0\ExampleWebshop.Core.pdb
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.dll
+C:\Users\Isomorphism\source\repos\ExampleWebshop\src\ExampleWebshop.Core\obj\Debug\netstandard2.0\ExampleWebshop.Core.pdb

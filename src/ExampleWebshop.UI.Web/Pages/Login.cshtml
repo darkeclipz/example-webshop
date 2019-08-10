@@ -1,0 +1,137 @@
+﻿@page
+@model ExampleWebshop.UI.Web.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="row">
+    <div class="col-6">
+        <h2>Login</h2>
+
+        <form method="post">
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" name="email" class="form-control" required placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll sometimes share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" required name="password" placeholder="Password">
+            </div>
+
+            @if(!string.IsNullOrWhiteSpace(Model.LoginError))
+            {
+                <div class="alert alert-danger">@Model.LoginError</div>
+            }
+
+            <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    
+    <div class="col-6">
+        <h2>Signup</h2>
+
+        <form class="needs-validation" method="post" asp-page-handler="signup" novalidate>
+
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Account details</h4>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mb-3">
+                    <label for="streetName">Street</label>
+                    <input type="text" class="form-control" name="streetName" id="streetName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid street name is required.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="houseNumber">House number</label>
+                    <input type="text" class="form-control" id="houseNumber" name="houseNumber" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid house number is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="postalCode">Postal code</label>
+                    <input type="text" class="form-control" name="postalCode" id="postalCode" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid postal code is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid city is required.
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" name="country" required>
+                    <option value="">Choose...</option>
+                    <option>Netherlands</option>
+                    <option>Belgium</option>
+                    <option>Germany</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+
+            @if(!string.IsNullOrWhiteSpace(Model.SignupError))
+            {
+                <div class="alert alert-danger">@Model.SignupError</div>
+            }
+
+            <input type="submit" class="btn btn-primary" value="Create account" />
+
+        </form>
+
+    </div>
+
+</div>
